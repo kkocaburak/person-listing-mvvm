@@ -14,7 +14,7 @@ abstract class BaseBindingAdapter<T : ListAdapterItem>(
         return BaseBindingViewHolder(
             DataBindingUtil.inflate(
                 LayoutInflater.from(parent.context),
-                getItem(viewType).layoutId,
+                viewType,
                 parent,
                 false
             )

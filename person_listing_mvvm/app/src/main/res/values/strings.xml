@@ -5,5 +5,14 @@
     <string name="common_error_network_connection">Network error, please try again.</string>
     <string name="common_error_unknown">Unknown error.</string>
     <string name="common_error_timeout">Timeout error.</string>
+    <string name="common_error_page_end">You fetched all of the data.</string>
+    <string name="common_error_title">Error</string>
+    <string name="common_error_empty_response">There is an error occurred, please try again</string>
     <!-- Common Resources -->
+
+    <string name="popup_ok">Okey</string>
+    <string name="popup_not_ok">Cancel</string>
+    <string name="popup_retry">Retry</string>
+    <string name="popup_close">Close</string>
+
 </resources>

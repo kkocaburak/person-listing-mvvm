@@ -11,11 +11,14 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.14447463768115942" />
         <entry key="app/src/main/res/layout/activity_splash_main.xml" value="0.14447463768115942" />
         <entry key="app/src/main/res/layout/fragment_battery_list.xml" value="0.14447463768115942" />
+        <entry key="app/src/main/res/layout/fragment_first_page.xml" value="0.10309017223910841" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/layout/fragment_person_list.xml" value="0.10733695652173914" />
         <entry key="app/src/main/res/layout/fragment_restaurant_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_restaurant_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_battery.xml" value="0.14447463768115942" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.5444444444444444" />
+        <entry key="app/src/main/res/layout/item_person.xml" value="0.1492822966507177" />
         <entry key="app/src/main/res/layout/item_restaurant.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_restaurant_header.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_restaurant_section_empty.xml" value="0.18885869565217392" />
