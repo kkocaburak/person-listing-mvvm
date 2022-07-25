@@ -46,6 +46,7 @@ abstract class BaseFragment<VM : BaseViewModel, B : ViewDataBinding> :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        observeLoading()
         observeNavigation()
         observeFailure()
 
@@ -54,8 +55,18 @@ abstract class BaseFragment<VM : BaseViewModel, B : ViewDataBinding> :
         setReceivers()
     }
 
+    private fun observeLoading() {
+        observeNonNull(viewModel.loading) { shouldLoading ->
+            if (shouldLoading) {
+                (requireActivity() as? BaseActivity<*, *>)?.showLoading()
+            } else {
+                (requireActivity() as? BaseActivity<*, *>)?.hideLoading()
+            }
+        }
+    }
+
     private fun observeNavigation() {
-        viewModel.navigation.observeNonNull(viewLifecycleOwner) {
+        observeNonNull(viewModel.navigation) {
             it.getContentIfNotHandled()?.let { command ->
                 handleNavigation(command)
             }
@@ -63,7 +74,7 @@ abstract class BaseFragment<VM : BaseViewModel, B : ViewDataBinding> :
     }
 
     private fun observeFailure() {
-        viewModel.popup.observeNonNull(viewLifecycleOwner) {
+        observeNonNull(viewModel.popup) {
             it.getContentIfNotHandled()?.let { popupModel ->
                 requireContext().showPopup(popupModel)
             }

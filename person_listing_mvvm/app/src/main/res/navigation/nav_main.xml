@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/FRFirstPage"
-        android:name="com.bkarakoca.personlistingmvvm.scene.first.FRFirstPage"
+        android:name="com.bkarakoca.personlistingmvvm.scene.first.FRPersonList"
         android:label="FRFirstPage" />
 </navigation>

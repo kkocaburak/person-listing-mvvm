@@ -9,6 +9,8 @@ import kotlin.random.Random
 
 data class Person(val id: Int, val fullName: String)
 
+fun Person.getNameWithId() = "$fullName ($id)"
+
 data class FetchResponse(val people: List<Person>, val next: String?)
 
 data class FetchError(val errorDescription: String)
