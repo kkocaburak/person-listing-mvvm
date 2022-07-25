@@ -1,8 +1,4 @@
-# Example App
-** App Description **
-
-<img src="/assets/resource1" width="260"> | <img src="/assets/resource2" width="260"> | <img src="/assets/resource3" width="260">
-
+# Person Listing Application - Android
 ## Architecture
 
 - Single Activity
@@ -31,10 +27,7 @@
 - **[Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android):** Dependency injector
 - **[Coroutines](https://github.com/Kotlin/kotlinx.coroutines):** Asynchronous programming
 - **[Kotlin-Flow](https://developer.android.com/kotlin/flow):** Asynchronous programming
-- **[Room](https://developer.android.com/jetpack/androidx/releases/room):** Local database
-- **[Retrofit](https://github.com/square/retrofit):** Type safe HTTP client
 - **[GSON](https://github.com/google/gson):** JSON serializer/deserializer
-- **[MockK](https://mockk.io/ANDROID.html):** Unit test
 
 ## Unit Test
 
@@ -58,4 +51,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-1

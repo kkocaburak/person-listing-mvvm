@@ -8,3 +8,9 @@ fun <T> LifecycleOwner.observe(liveData: LiveData<T>, observer: (T) -> Unit) {
         it?.let { t -> observer(t) }
     }
 }
+
+fun <T> LifecycleOwner.observeNonNull(liveData: LiveData<T>, observer: (t: T) -> Unit) {
+    liveData.observe(this) {
+        it?.let(observer)
+    }
+}

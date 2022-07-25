@@ -6,20 +6,19 @@
 
         <variable
             name="viewModel"
-            type="com.bkarakoca.personlistingmvvm.scene.first.FRFirstPageVM" />
+            type="com.bkarakoca.personlistingmvvm.scene.first.FRPersonListVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_person"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Hello World!"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
